@@ -200,7 +200,7 @@ export const EVENTS = [
   "Special Events",
 ];
 
-export const GALLERY = Array.from({ length: 22 }, (_, i) => ({
+export const GALLERY = Array.from({ length: 39 }, (_, i) => ({
   src: `/gallery/client-${String(i + 1).padStart(2, "0")}.jpg`,
   alt: `TreatLady custom creation ${i + 1}`,
 }));
