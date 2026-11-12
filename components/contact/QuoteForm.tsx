@@ -186,7 +186,7 @@ export default function QuoteForm() {
                   className="mt-0.5 h-5 w-5 shrink-0 rounded border-pale accent-copper"
                   {...aria("agree")}
                 />
-                I understand wedding cakes and dessert tables should be booked at least 2 weeks in advance.
+                I understand dessert tables must be ordered at least 3 weeks in advance and wedding cakes at least 2 weeks in advance.
               </label>
               {err("agree") && (
                 <p id="agree-error" className="mt-1.5 text-xs text-red-600">

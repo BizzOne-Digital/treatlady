@@ -10,7 +10,7 @@ import { IMAGES, PLANNING_INFO, SERVICES } from "@/lib/constants";
 export const metadata: Metadata = {
   title: "Services & Pricing - Cakes, Dessert Tables, Balloon Decor",
   description:
-    "Custom cakes from $75, styled dessert tables from $500 and balloon decor from $300. View TreatLady services, booking notice and delivery details.",
+    "Custom cakes from $100, dessert displays with balloon decor from $700 and balloon decor from $300. View TreatLady services, booking notice and delivery details.",
   alternates: { canonical: "/services" },
 };
 
@@ -41,7 +41,7 @@ export default function ServicesPage() {
             title={<span id="planning">Planning Information</span>}
             subtitle="A few details to help your order go smoothly from booking to pickup or delivery."
           />
-          <ul className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          <ul className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
             {PLANNING_INFO.map((p, i) => (
               <li key={p.title}>
                 <Reveal delay={i * 0.06} className="flex h-full gap-4 rounded-3xl bg-white p-6 shadow-card ring-1 ring-pale/60">

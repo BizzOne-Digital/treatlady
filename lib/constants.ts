@@ -5,7 +5,7 @@ export const BUSINESS = {
   name: "TreatLady",
   owner: "Leticia",
   tagline: "Let us treat U",
-  phones: ["559-681-9449", "559-777-9335"],
+  phones: ["559-777-9335", "559-681-9449"],
   email: "info@treatladyevents.com",
   hours: "Mon–Sat: 7:00 AM–5:00 PM",
   closed: "Closed Sunday",
@@ -32,14 +32,15 @@ export const IMAGES = {
   heroSmall: "/images/hero-balloons.png",
   cakes: "/images/cakes.png",
   desserts: "/images/desserts.png",
-  balloons: "/images/balloons.png",
+  balloons: "/images/balloons.png", // TODO: client balloon-arch.png
   cta: "/images/dessert-table-wide.png",
   aboutHero: "/images/dessert-table-wide.png",
   servicesHero: "/images/services-hero.png",
   party: "/images/party.png",
   // Still stock - replace when available
   owner: "/images/home-about.png",
-  story: u("1621303837174-89787a7d4729", 1200),
+  meetLeticia: "/images/home-about.png", // TODO: client meet-leticia.png
+  story: "/images/cakes.png", // TODO: client chocolate-cake.png
 };
 
 export type IconName =
@@ -62,7 +63,7 @@ export const SERVICES = [
     icon: "cake" as IconName,
     title: "Custom Cakes",
     short: "Custom Cakes",
-    price: 75,
+    price: 100,
     image: IMAGES.cakes,
     alt: "Elegant custom cake decorated with fresh flowers",
     description:
@@ -73,15 +74,15 @@ export const SERVICES = [
   {
     key: "desserts",
     icon: "cupcake" as IconName,
-    title: "Custom Dessert Tables",
-    short: "Dessert Tables",
-    price: 500,
+    title: "Dessert Display & Balloon Decor",
+    short: "Dessert & Balloons",
+    price: 700,
     image: IMAGES.desserts,
     alt: "Styled dessert table with cupcakes and treats",
     description:
       "A fully styled dessert table that doubles as a showpiece. We coordinate the treats, stands, florals and décor so your guests remember how it looked as much as how it tasted.",
-    includes: ["Cupcakes", "Cake pops", "Cookies", "Assorted desserts", "Styled table displays", "Floral & décor setup"],
-    notice: "Book at least 2 weeks in advance.",
+    includes: ["Cupcakes", "Cake pops", "Cookies", "Assorted desserts", "Styled table displays", "Balloon decor setup", "Floral & décor setup"],
+    notice: "Orders must be placed at least 3 weeks in advance.",
   },
   {
     key: "balloons",
@@ -105,7 +106,7 @@ export const FEATURES: { icon: IconName; title: string; text: string }[] = [
 ];
 
 export const POLICIES: { icon: IconName; title: string; text: string }[] = [
-  { icon: "calendar", title: "Planning a Wedding or Large Event?", text: "Please book at least 2 weeks in advance." },
+  { icon: "calendar", title: "Planning a Wedding or Large Event?", text: "Dessert tables: 3 weeks in advance. Wedding cakes: 2 weeks in advance." },
   { icon: "cake", title: "Custom Cakes", text: "Require at least 3 days' notice." },
   { icon: "truck", title: "Delivery Options", text: "Available for a small fee." },
   {
@@ -116,7 +117,8 @@ export const POLICIES: { icon: IconName; title: string; text: string }[] = [
 ];
 
 export const PLANNING_INFO: { icon: IconName; title: string; text: string }[] = [
-  { icon: "calendar", title: "Weddings & Dessert Tables", text: "Wedding cakes and dessert tables require at least 2 weeks' notice." },
+  { icon: "calendar", title: "Dessert Tables", text: "Dessert table orders must be placed at least 3 weeks in advance." },
+  { icon: "calendar", title: "Wedding Cakes", text: "Wedding cake orders must be placed at least 2 weeks in advance." },
   { icon: "cake", title: "Custom Cakes", text: "Custom cakes require at least 3 days' notice." },
   { icon: "sparkles", title: "Buttercream Only", text: "All cakes are covered in buttercream. We do not offer fondant-covered cakes." },
   { icon: "alert", title: "Short-Notice Orders", text: "Short-notice orders may be possible and may include an additional fee." },
@@ -167,7 +169,7 @@ export const PACKAGE_POINTS = [
 export const FAQS = [
   {
     q: "How far in advance should I book?",
-    a: "Custom cakes need at least 3 days' notice. Wedding cakes, dessert tables and large events should be booked at least 2 weeks in advance. Short-notice orders may be possible for an additional fee.",
+    a: "Custom cakes need at least 3 days' notice. Wedding cakes must be ordered at least 2 weeks in advance, and dessert tables at least 3 weeks in advance. Short-notice orders may be possible for an additional fee.",
   },
   {
     q: "Do you use fondant on your cakes?",
@@ -194,6 +196,7 @@ export const EVENTS = [
   "Bridal Showers",
   "Anniversaries",
   "Corporate Celebrations",
+  "Quinceañeras",
   "Special Events",
 ];
 
@@ -211,6 +214,6 @@ export const SERVICE_OPTIONS = [
   "Full Event Package",
 ] as const;
 
-export const EVENT_TYPES = ["Wedding", "Birthday", "Baby Shower", "Bridal Shower", "Anniversary", "Corporate", "Other"] as const;
+export const EVENT_TYPES = ["Wedding", "Birthday", "Baby Shower", "Bridal Shower", "Anniversary", "Quinceañera", "Corporate", "Other"] as const;
 
 export const BUDGETS = ["Under $150", "$150 - $500", "$500 - $1,000", "$1,000 - $2,500", "$2,500+"] as const;

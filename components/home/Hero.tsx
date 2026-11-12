@@ -40,7 +40,7 @@ export default function Hero() {
             className="mt-5 font-serif text-[2.6rem] leading-[1.08] text-ink sm:text-6xl lg:text-[4.2rem]"
           >
             Custom Treats for Your{" "}
-            <span className="relative inline-block font-script text-[1.25em] font-normal leading-none text-gradient-rose">
+            <span className="relative inline-block whitespace-nowrap px-1 pb-2 font-script text-[1.15em] font-normal leading-[1.25] text-gradient-rose sm:text-[1.25em]">
               Special Events
             </span>
           </motion.h1>
@@ -104,16 +104,6 @@ export default function Hero() {
             className="absolute left-[10%] top-[6%] h-24 w-24 overflow-hidden rounded-full border-4 border-white shadow-soft sm:h-28 sm:w-28"
           >
             <Image src={IMAGES.heroSmall} alt="Blush balloons" fill sizes="112px" className="object-cover" />
-          </motion.div>
-
-          <motion.div
-            initial={reduce ? false : { opacity: 0, y: 16 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: base + 0.9, duration: 0.7 }}
-            className="absolute bottom-[-4%] right-[6%] rounded-2xl bg-white/95 px-5 py-3.5 shadow-soft backdrop-blur"
-          >
-            <p className="text-[10px] font-semibold uppercase tracking-[0.2em] text-copper">Cakes from</p>
-            <p className="font-serif text-2xl text-ink">$75</p>
           </motion.div>
         </motion.div>
       </div>

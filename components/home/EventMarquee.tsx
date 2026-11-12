@@ -2,7 +2,7 @@ import { Heart } from "lucide-react";
 import { EVENTS } from "@/lib/constants";
 
 export default function EventMarquee() {
-  const items = [...EVENTS, "Gender Reveals", "Quinceañeras", "Graduations"];
+  const items = [...EVENTS, "Gender Reveals", "Graduations"];
   const loop = [...items, ...items];
   return (
     <section aria-label="Events we serve" className="group overflow-hidden bg-ink py-5">

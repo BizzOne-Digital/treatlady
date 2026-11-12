@@ -38,7 +38,7 @@ export default function AboutPage() {
           <Reveal className="relative mx-auto w-full max-w-md">
             <div className="absolute -bottom-4 -right-4 h-full w-full rounded-[2.5rem] border border-rose/50" aria-hidden="true" />
             <div className="relative aspect-[4/5] overflow-hidden rounded-[2.5rem] rounded-tr-[7rem] shadow-soft">
-              <Image src={IMAGES.owner} alt="Leticia finishing a rose-gold drip buttercream cake" fill sizes="(max-width: 768px) 90vw, 45vw" className="object-cover" />
+              <Image src={IMAGES.meetLeticia} alt="Leticia finishing a rose-gold drip buttercream cake" fill sizes="(max-width: 768px) 90vw, 45vw" className="object-cover" />
             </div>
           </Reveal>
           <Reveal delay={0.1}>
