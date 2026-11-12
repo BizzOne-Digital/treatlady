@@ -32,7 +32,7 @@ export const IMAGES = {
   heroSmall: "/images/hero-balloons.png",
   cakes: "/images/cakes.png",
   desserts: "/images/desserts.png",
-  balloons: "/images/balloons.png", // TODO: client balloon-arch.png
+  balloons: "/images/balloon-arch.jpg",
   cta: "/images/dessert-table-wide.png",
   aboutHero: "/images/dessert-table-wide.png",
   servicesHero: "/images/services-hero.png",
