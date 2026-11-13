@@ -10,7 +10,7 @@ import { IMAGES, PLANNING_INFO, SERVICES } from "@/lib/constants";
 export const metadata: Metadata = {
   title: "Services & Pricing - Cakes, Dessert Tables, Balloon Decor",
   description:
-    "Custom cakes from $100, dessert displays with balloon decor from $700 and balloon decor from $300. View TreatLady services, booking notice and delivery details.",
+    "Custom cakes from $100, dessert displays with balloon decor from $700 and balloon decor from $500. View TreatLady services, booking notice and delivery details.",
   alternates: { canonical: "/services" },
 };
 

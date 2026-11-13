@@ -37,10 +37,10 @@ export default function Hero() {
           </motion.p>
           <motion.h1
             {...fade(0.1)}
-            className="mt-5 font-serif text-[2.6rem] leading-[1.08] text-ink sm:text-6xl lg:text-[4.2rem]"
+            className="mt-5 font-serif text-[2.4rem] leading-[1.1] text-ink sm:text-6xl lg:text-[4.2rem]"
           >
             Custom Treats for Your{" "}
-            <span className="relative inline-block whitespace-nowrap px-1 pb-2 font-script text-[1.15em] font-normal leading-[1.25] text-gradient-rose sm:text-[1.25em]">
+            <span className="hero-script relative mt-1 block whitespace-nowrap px-1 pb-2 font-script text-[1.35em] font-normal leading-[1.2] text-gradient-rose sm:mt-0 sm:inline-block sm:text-[1.25em]">
               Special Events
             </span>
           </motion.h1>

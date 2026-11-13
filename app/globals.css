@@ -68,6 +68,16 @@ body {
   animation: shimmer 6s linear infinite;
 }
 
+/* stronger contrast for the hero script word on phones */
+@media (max-width: 639px) {
+  .hero-script {
+    background: none;
+    color: #b96855;
+    -webkit-text-fill-color: #b96855;
+    animation: none;
+  }
+}
+
 .no-scrollbar::-webkit-scrollbar {
   display: none;
 }

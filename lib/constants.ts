@@ -38,9 +38,9 @@ export const IMAGES = {
   servicesHero: "/images/services-hero.png",
   party: "/images/party.png",
   // Still stock - replace when available
-  owner: "/images/home-about.png",
-  meetLeticia: "/images/home-about.png", // TODO: client meet-leticia.png
-  story: "/images/cakes.png", // TODO: client chocolate-cake.png
+  owner: "/images/meet-leticia.jpg",
+  meetLeticia: "/images/meet-leticia.jpg",
+  story: "/images/chocolate-cake.jpg",
 };
 
 export type IconName =
@@ -89,7 +89,7 @@ export const SERVICES = [
     icon: "balloon" as IconName,
     title: "Balloon Decor",
     short: "Balloon Decor",
-    price: 300,
+    price: 500,
     image: IMAGES.balloons,
     alt: "Blush and gold balloon installation",
     description:
@@ -112,7 +112,7 @@ export const POLICIES: { icon: IconName; title: string; text: string }[] = [
   {
     icon: "clock",
     title: "Pickup Policy",
-    text: "10-minute grace period. After 10 minutes, pickup will be at the earliest available time and may include a $10 fee.",
+    text: "10-minute grace period after the scheduled pickup time. After 10 minutes, pickup will be at the earliest available time and may include a $10 fee.",
   },
 ];
 
@@ -126,7 +126,7 @@ export const PLANNING_INFO: { icon: IconName; title: string; text: string }[] = 
   {
     icon: "clock",
     title: "Pickup Grace Period",
-    text: "Pickups have a 10-minute grace period. After 10 minutes, pickup is rescheduled for the owner's earliest convenience and a $10 fee may apply.",
+    text: "Pickups have a 10-minute grace period after the scheduled pickup time. After 10 minutes, pickup is rescheduled for the owner's earliest convenience and a $10 fee may apply.",
   },
   { icon: "gift", title: "Large Orders", text: "Contact us for large-order discounts." },
 ];
@@ -181,7 +181,7 @@ export const FAQS = [
   },
   {
     q: "What is your pickup policy?",
-    a: "Pickups have a 10-minute grace period. After 10 minutes, pickup will be rescheduled for the owner's earliest convenience and a $10 fee may apply.",
+    a: "Pickups have a 10-minute grace period after the scheduled pickup time. After 10 minutes, pickup will be rescheduled for the owner's earliest convenience and a $10 fee may apply.",
   },
   {
     q: "Can I combine services into one package?",
@@ -200,7 +200,7 @@ export const EVENTS = [
   "Special Events",
 ];
 
-export const GALLERY = Array.from({ length: 39 }, (_, i) => ({
+export const GALLERY = Array.from({ length: 24 }, (_, i) => ({
   src: `/gallery/client-${String(i + 1).padStart(2, "0")}.jpg`,
   alt: `TreatLady custom creation ${i + 1}`,
 }));
