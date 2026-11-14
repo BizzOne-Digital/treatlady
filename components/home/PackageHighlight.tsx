@@ -10,10 +10,10 @@ export default function PackageHighlight() {
       <div className="absolute -right-40 top-0 h-[30rem] w-[30rem] rounded-full bg-rose/20 blur-[120px]" aria-hidden="true" />
       <div className="relative mx-auto grid max-w-7xl items-center gap-12 px-5 sm:px-8 lg:grid-cols-2 lg:gap-16">
         <Reveal>
-          <div className="group relative aspect-[16/10] overflow-hidden rounded-[2rem] ring-1 ring-white/10">
+          <div className="group relative aspect-[5/4] overflow-hidden rounded-[2rem] ring-1 ring-white/10">
             <Image
-              src={IMAGES.servicesHero}
-              alt="Full event setup with cake, dessert table and balloon decor"
+              src={IMAGES.story}
+              alt="Chocolate buttercream drip cake with a slice served"
               fill
               sizes="(max-width: 1024px) 92vw, 50vw"
               className="object-cover transition-transform duration-[1.2s] group-hover:scale-[1.04]"
