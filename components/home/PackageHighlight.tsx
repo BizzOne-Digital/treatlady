@@ -27,7 +27,7 @@ export default function PackageHighlight() {
         <Reveal delay={0.15}>
           <p className="text-xs font-semibold uppercase tracking-[0.3em] text-rose">Full Event Package</p>
           <h2 className="mt-4 font-serif text-3xl leading-tight sm:text-4xl lg:text-5xl">
-            One Vision, <span className="font-script text-[1.25em] text-gradient-rose">Perfectly Styled</span>
+            One Vision, <span className="font-script text-[1.25em] text-rose">Perfectly Styled</span>
           </h2>
           <p className="mt-5 max-w-lg leading-relaxed text-white/75">
             Combine your cake, dessert table and balloon decor into one coordinated look. One point of contact, one
