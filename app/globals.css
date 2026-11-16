@@ -96,3 +96,11 @@ body {
     transition-duration: 0.01ms !important;
   }
 }
+
+/* script font swashes overflow their box; pad so the gradient clip doesn't cut the last letter */
+.font-script.text-gradient-rose {
+  padding: 0 0.3em 0.12em 0.08em;
+  margin-right: -0.2em;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}

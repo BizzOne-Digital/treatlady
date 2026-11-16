@@ -20,6 +20,14 @@ function InstagramIcon() {
   );
 }
 
+function TikTokIcon() {
+  return (
+    <svg viewBox="0 0 24 24" width="19" height="19" fill="currentColor" aria-hidden="true">
+      <path d="M16.6 5.8A4.3 4.3 0 0 1 15.5 3h-3.1v12.4a2.6 2.6 0 1 1-2.6-2.6c.3 0 .5 0 .8.1V9.7a5.7 5.7 0 1 0 4.9 5.7V9.1a7.3 7.3 0 0 0 4.3 1.4V7.4a4.3 4.3 0 0 1-3.2-1.6Z" />
+    </svg>
+  );
+}
+
 export default function Footer() {
   const year = new Date().getFullYear();
   return (
@@ -91,6 +99,15 @@ export default function Footer() {
               className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/20 transition hover:border-rose hover:text-rose"
             >
               <InstagramIcon />
+            </a>
+            <a
+              href={BUSINESS.social.tiktok}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="TreatLady on TikTok"
+              className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/20 transition hover:border-rose hover:text-rose"
+            >
+              <TikTokIcon />
             </a>
           </div>
           <p className="mt-6 text-sm text-white/60">Ask about large-order discounts.</p>

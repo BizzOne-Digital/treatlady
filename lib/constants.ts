@@ -12,6 +12,7 @@ export const BUSINESS = {
   social: {
     facebook: "https://facebook.com/",
     instagram: "https://instagram.com/",
+    tiktok: "https://www.tiktok.com/",
   },
 } as const;
 
