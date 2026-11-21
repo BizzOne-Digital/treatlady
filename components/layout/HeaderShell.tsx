@@ -24,6 +24,7 @@ export default function HeaderShell({ logo }: { logo: ReactNode }) {
   const isActive = (href: string) => (href === "/" ? pathname === "/" : pathname.startsWith(href));
 
   return (
+    <>
     <header
       className={`sticky top-0 z-50 transition-all duration-300 ${
         scrolled ? "bg-ink/90 shadow-[0_8px_30px_-12px_rgba(0,0,0,0.6)] backdrop-blur-md" : "bg-ink"
@@ -79,7 +80,9 @@ export default function HeaderShell({ logo }: { logo: ReactNode }) {
         </button>
       </div>
 
-      <MobileMenu open={open} onClose={() => setOpen(false)} isActive={isActive} />
     </header>
+    {/* outside <header>: its backdrop-blur would trap this fixed overlay inside the header box */}
+    <MobileMenu open={open} onClose={() => setOpen(false)} isActive={isActive} />
+    </>
   );
 }

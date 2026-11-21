@@ -26,7 +26,7 @@ export default function MobileMenu({ open, onClose, isActive }: Props) {
       {open && (
         <>
           <motion.div
-            className="fixed inset-0 z-50 bg-ink/60 backdrop-blur-sm lg:hidden"
+            className="fixed inset-0 z-[60] bg-ink/60 backdrop-blur-sm lg:hidden"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
@@ -38,7 +38,7 @@ export default function MobileMenu({ open, onClose, isActive }: Props) {
             role="dialog"
             aria-modal="true"
             aria-label="Site navigation"
-            className="fixed inset-y-0 right-0 z-50 flex w-[86%] max-w-sm flex-col bg-ivory px-7 pb-8 pt-6 shadow-2xl lg:hidden"
+            className="fixed inset-y-0 right-0 z-[70] flex w-[86%] max-w-sm flex-col bg-ivory px-7 pb-8 pt-6 shadow-2xl lg:hidden"
             initial={{ x: "100%" }}
             animate={{ x: 0 }}
             exit={{ x: "100%" }}
