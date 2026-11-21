@@ -202,9 +202,10 @@ export const EVENTS = [
   "Special Events",
 ];
 
-export const GALLERY = Array.from({ length: 24 }, (_, i) => ({
-  src: `/gallery/client-${String(i + 1).padStart(2, "0")}.jpg`,
-  alt: `TreatLady custom creation ${i + 1}`,
+// client-25 ("Baby in Bloom") shown first per client request
+export const GALLERY = [25, ...Array.from({ length: 24 }, (_, i) => i + 1)].map((n) => ({
+  src: `/gallery/client-${String(n).padStart(2, "0")}.jpg`,
+  alt: n === 25 ? "Baby in Bloom floral buttercream cake" : `TreatLady custom creation ${n}`,
 }));
 
 export const SERVICE_OPTIONS = [
