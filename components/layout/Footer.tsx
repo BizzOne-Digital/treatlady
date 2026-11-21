@@ -28,6 +28,14 @@ function TikTokIcon() {
   );
 }
 
+function ThreadsIcon() {
+  return (
+    <svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" aria-hidden="true">
+      <path d="M17.5 8.2C16.6 5.4 14.6 4 12 4 7.6 4 5 7.2 5 12s2.6 8 7 8c3.3 0 5.8-1.9 5.8-4.6 0-2.6-2.2-4-5.2-4-2.2 0-3.6 1-3.6 2.5 0 1.4 1.2 2.3 2.8 2.3 2.6 0 3.8-2.1 3.8-5.7" />
+    </svg>
+  );
+}
+
 export default function Footer() {
   const year = new Date().getFullYear();
   return (
@@ -99,6 +107,15 @@ export default function Footer() {
               className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/20 transition hover:border-rose hover:text-rose"
             >
               <InstagramIcon />
+            </a>
+            <a
+              href={BUSINESS.social.threads}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="TreatLady on Threads"
+              className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/20 transition hover:border-rose hover:text-rose"
+            >
+              <ThreadsIcon />
             </a>
             <a
               href={BUSINESS.social.tiktok}

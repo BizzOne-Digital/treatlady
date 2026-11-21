@@ -11,7 +11,8 @@ export const BUSINESS = {
   closed: "Closed Sunday",
   social: {
     facebook: "https://facebook.com/",
-    instagram: "https://instagram.com/",
+    instagram: "https://www.instagram.com/treatlady_23",
+    threads: "https://www.threads.com/@treatlady_23",
     tiktok: "https://www.tiktok.com/@treatladygoodies",
   },
 } as const;
