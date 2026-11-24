@@ -30,17 +30,17 @@ export default function Hero() {
       <div className="absolute -left-32 top-10 -z-10 h-96 w-96 rounded-full bg-pale/70 blur-3xl" aria-hidden="true" />
       <div className="absolute -right-20 bottom-0 -z-10 h-80 w-80 rounded-full bg-rose/20 blur-3xl" aria-hidden="true" />
 
-      <div className="mx-auto grid max-w-7xl items-center gap-12 px-5 pb-20 pt-12 sm:px-8 lg:grid-cols-[1fr_1.1fr] lg:gap-10 lg:pb-28 lg:pt-16">
-        <div className="relative z-10 text-center lg:text-left">
+      <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-12 px-5 pb-20 pt-12 sm:px-8 lg:grid-cols-[1fr_1.1fr] lg:gap-10 lg:pb-28 lg:pt-16">
+        <div className="relative z-10 min-w-0 text-center lg:text-left">
           <motion.p {...fade(0)} className="text-[11px] font-semibold uppercase tracking-[0.3em] text-ink/80 sm:text-xs">
             Cakes <span className="text-rose">&bull;</span> Dessert Tables <span className="text-rose">&bull;</span> Balloon Decor
           </motion.p>
           <motion.h1
             {...fade(0.1)}
-            className="mt-5 font-serif text-[2.4rem] leading-[1.1] text-ink sm:text-6xl lg:text-[4.2rem]"
+            className="mt-5 break-words font-serif text-[clamp(1.9rem,9vw,2.4rem)] leading-[1.1] text-ink sm:text-6xl lg:text-[4.2rem]"
           >
             Custom Treats for Your{" "}
-            <span className="hero-script relative mt-1 block whitespace-nowrap px-1 pb-2 font-script text-[1.35em] font-normal leading-[1.2] text-gradient-rose sm:mt-0 sm:inline-block sm:text-[1.25em]">
+            <span className="hero-script relative mt-1 block max-w-full px-1 sm:whitespace-nowrap pb-2 font-script text-[1.35em] font-normal leading-[1.2] text-gradient-rose sm:mt-0 sm:inline-block sm:text-[1.25em]">
               Special Events
             </span>
           </motion.h1>
@@ -65,7 +65,7 @@ export default function Hero() {
         </div>
 
         {/* layered image composition */}
-        <motion.div style={{ y }} className="relative mx-auto aspect-[4/4.2] w-full max-w-[560px] sm:aspect-[5/4.6]">
+        <motion.div style={{ y }} className="relative mx-auto aspect-[4/4.2] w-full min-w-0 max-w-[560px] sm:aspect-[5/4.6]">
           <motion.div
             initial={reduce ? false : { opacity: 0, scale: 0.96, clipPath: "inset(10% 10% 10% 10% round 200px)" }}
             animate={{ opacity: 1, scale: 1, clipPath: "inset(0% 0% 0% 0% round 200px 200px 28px 28px)" }}
